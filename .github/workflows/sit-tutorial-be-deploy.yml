@@ -12,12 +12,12 @@ env:
   REPOSITORY: "ArnupapC/arnupapc-tutorials-backend"
   GITREF: ${{ github.event.inputs.ref }}
   ARTIFACT_NAME: "artifact-tutorial-backend"
-  APP_RESOURCE_NAME: app-<username>-az-<region>-sit-001
+  APP_RESOURCE_NAME: app-user18-az-usw3-uat-001
 
 jobs:
   deploy-app-service:
     name: Deploy
-    runs-on: [ self-hosted, tutorial-be-sit, vm-user18SelfHost-az-usw3-sbx-001 ]
+    runs-on: [ self-hosted, tutorial-be-dev, vm-user18SelfHost-az-usw3-sbx-001 ]
     environment:
       name: sit
       url: https://app-user18-az-usw3-uat-001/swagger/index.html
@@ -57,3 +57,4 @@ jobs:
         repository: ${{ env.REPOSITORY }}
         event-type: user18-tutorial-be-dast-sit
         client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+        
