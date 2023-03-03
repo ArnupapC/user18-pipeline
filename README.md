@@ -1,2 +1,11 @@
-# user18-pipeline
-CD pipeline
+export GITHUB_PACKAGE_URL=ghcr.io
+export GITHUB_PACKAGE_USERNAME=ArnupapC
+export GITHUB_PACKAGE_TOKEN=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
+export GITHUB_PACKAGE_IMAGE=kietara/az-selfhost-runner:latest
+export GITHUB_RUNNER_REPO_URL=https://github.com/ArnupapC/user18-pipeline
+export GITHUB_RUNNER_ACCESS_TOKEN=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
+export GITHUB_RUNNER_NAME_PREFIX=tutorial-be-dev
+export GITHUB_RUNNER_LABELS=vm-user18SelfHost-az-usw3-sbx-001,tutorial-be-dev
+export GITHUB_RUNNER_NAME_PREFIX=tutorial-be-dev
+export GITHUB_RUNNER_NUMBER=1
+export AZURERM_VM_ADMIN_USER=azureadmin
