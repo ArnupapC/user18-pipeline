@@ -2,7 +2,7 @@ name: DEV - Tutorial BE Deploy
 
 on:
   repository_dispatch:
-    types: [arnupapc-tutorial-be-cd-dev]
+    types: [user18-tutorial-be-cd-dev]
   workflow_dispatch:
     inputs:
       ref:
